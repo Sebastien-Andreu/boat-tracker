@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.boattrackerv2.MainActivity">
+    <item
+        android:id="@+id/googleConnection"
+        android:orderInCategory="100"
+        android:title="@string/googleConnection"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/modifyBoat"
+        android:orderInCategory="100"
+        android:title="@string/ModifyBoat"
+        app:showAsAction="never" />
+</menu>

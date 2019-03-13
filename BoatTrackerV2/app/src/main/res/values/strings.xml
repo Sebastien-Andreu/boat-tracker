@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BoatTracker</string>
+    <string name="googleConnection">Google Connection</string>
+
+    <string name="showfirstmsg">Boat Tracker !!!!! Application de base!</string>
+
+    <string name="buttonOtherActivity">Show List Boat</string>
+    <string name="buttonShowDistance">Show Distance</string>
+    <string name="buttonShowCarte">Show in Map</string>
+
+    <string name="title_activity_main2">BoatTracker : List of Boat</string>
+    <string name="title_activity_main3">BoatTracker : Boat Information</string>
+    <string name="title_activity_main4">BoatTracker : Boat View</string>
+    <string name="title_activity_main5">BoatTracker : Google</string>
+    <string name="title_activity_main6">BoatTracker : Modify Boat</string>
+
+    <string name="signed_out">Signed out</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="title_text">Google Sign-In\nQuickstart</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="desc_google_icon">Google Logo</string>
+    <string name="signed_in_fmt">Signed in as: %s</string>
+
+
+    <string name="ModifyBoat">ModifyBoat</string>
+    <string name="title_activity_main7">Main7Activity</string>
+</resources>
