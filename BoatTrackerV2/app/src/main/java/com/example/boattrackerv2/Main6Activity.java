@@ -248,13 +248,6 @@ public class Main6Activity extends AppCompatActivity{
                 });
     }
 
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        myDialogPort.dismiss();
-        myDialogType.dismiss();
-    }
-
     public void showPopupAddTypeOfBoat() {
         myDialogType.setContentView(R.layout.popup_add_type);
 

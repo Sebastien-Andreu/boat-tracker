@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -101,6 +102,8 @@ public class Main3Activity extends AppCompatActivity {
     }
 
     private void setTypeOBoat(){
+        Toast.makeText(Main3Activity.this, "Name of Boat : " + boat.getIdPort(),Toast.LENGTH_SHORT).show();
+
         final DocumentReference docType = db.collection("ContainershipType").document(boat.getIdType());
         docType.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -147,6 +150,7 @@ public class Main3Activity extends AppCompatActivity {
 
     public void showActivityContainer(){
         Intent activityShowContainer = new Intent(this.getBaseContext(), Main7Activity.class);
+        activityShowContainer.putExtra("idBoat", boat.getId());
         startActivity(activityShowContainer);
     }
 

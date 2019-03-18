@@ -71,6 +71,7 @@ public class Main2Activity extends AppCompatActivity {
                                 DocumentReference IDType = (DocumentReference)document.getData().get("type");
                                 DocumentReference IDPort = (DocumentReference)document.getData().get("port");
 
+
                                 Boat boat = new Boat(document.getData().get("captainName").toString(), document.getData().get("name").toString(),
                                         document.getId(), IDType.getId(), IDPort.getId(),(GeoPoint) document.getData().get("localization"));
                                 myListBoat.add(boat);

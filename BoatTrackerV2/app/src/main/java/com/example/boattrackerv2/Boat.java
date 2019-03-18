@@ -18,7 +18,9 @@ public class Boat {
         this.idType = idType;
         this.idPort = idPort;
         this.coordonneeBoat = coordonneeBoat;
+
     }
+
 
     public String getCaptainName() {
         return captainName;
@@ -63,7 +65,6 @@ public class Boat {
     public void setCoordonneeBoat(GeoPoint coordonneeBoat) {
         this.coordonneeBoat = coordonneeBoat;
     }
-
 
     @Override
     public String toString() {

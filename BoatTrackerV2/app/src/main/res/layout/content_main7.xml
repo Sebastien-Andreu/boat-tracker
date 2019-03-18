@@ -33,7 +33,7 @@
                 android:id="@+id/textViewAllContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="textViewAllContainer" />
+                android:text="Container in boat" />
 
             <Spinner
                 android:id="@+id/spinnerAllContainer"
@@ -55,83 +55,31 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
 
             <TextView
-                android:id="@+id/textViewGetContainerPort"
+                android:id="@+id/textViewContainerPort"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="textViewContainerPort"
+                android:text="Veuillez vous rapprocher d'un port"
                 android:visibility="gone" />
-
-            <Button
-                android:id="@+id/buttonGetContainerPort"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_weight="1"
-                android:text="Button"
-                android:visibility="visible" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
 
             <TextView
-                android:id="@+id/textViewContainerDepositPort"
+                android:id="@+id/textViewContainerOtherBoat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="textViewContainerDepositPort"
+                android:text="Il n'y a pas d'autre bateau dans le port"
                 android:visibility="gone" />
 
             <Button
-                android:id="@+id/buttonContainerDepositPort"
+                android:id="@+id/buttonContainerOtherBoat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:layout_weight="1"
-                android:text="Button"
-                android:visibility="visible" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
-
-            <TextView
-                android:id="@+id/textViewContainerDepositOtherBoat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="textViewContainerDepositOtherBoat"
+                android:text="Exchange with other boat"
                 android:visibility="gone" />
 
-            <Button
-                android:id="@+id/buttonContainerDepositOtherBoat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:layout_weight="1"
-                android:text="Button"
-                android:visibility="visible" />
         </LinearLayout>
 
     </LinearLayout>

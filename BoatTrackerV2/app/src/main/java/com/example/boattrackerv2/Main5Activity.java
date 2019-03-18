@@ -90,7 +90,6 @@ public class Main5Activity extends AppCompatActivity implements
         if (result.isSuccess()) {
             GoogleSignInAccount acct = result.getSignInAccount();
             textViewTest.setText(getString(R.string.signed_in_fmt, acct.getDisplayName()));
-            isConnected = true;
             updateUI(true);
         } else {
             textViewTest.setText("You are not connected");
@@ -110,7 +109,6 @@ public class Main5Activity extends AppCompatActivity implements
                     @Override
                     public void onResult(Status status) {
                         updateUI(false);
-                        isConnected = false;
                     }
                 });
     }
@@ -122,9 +120,11 @@ public class Main5Activity extends AppCompatActivity implements
 
     private void updateUI(boolean signedIn) {
         if (signedIn) {
+            isConnected = true;
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_out_button).setVisibility(View.VISIBLE);
         } else {
+            isConnected = false;
             findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
             findViewById(R.id.sign_out_button).setVisibility(View.GONE);
         }
