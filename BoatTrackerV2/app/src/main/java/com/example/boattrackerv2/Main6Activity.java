@@ -65,6 +65,7 @@ public class Main6Activity extends AppCompatActivity{
 
         if (!Main5Activity.isConnected){
             Intent activityGoogleConnection = new Intent(this, Main5Activity.class);
+            activityGoogleConnection.putExtra("isConnected", true);
             startActivity(activityGoogleConnection);
         }
 

@@ -19,7 +19,6 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -360,6 +359,13 @@ public class Main7Activity extends AppCompatActivity {
         window.setAttributes(layoutParams);
     }
 
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        setListOfContainerInBoat(List.class);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_modifyboat, menu);
@@ -372,6 +378,11 @@ public class Main7Activity extends AppCompatActivity {
         if (id == R.id.googleConnection) {
             Intent activityGoogleConnection = new Intent(this, Main5Activity.class);
             startActivity(activityGoogleConnection);
+        }
+        if (id == R.id.modifyBoat) {
+            Intent activityModifyBoat = new Intent(this, Main6Activity.class);
+            activityModifyBoat.putExtra("idBoat", boat.getId());
+            startActivity(activityModifyBoat);
         }
         return super.onOptionsItemSelected(item);
     }

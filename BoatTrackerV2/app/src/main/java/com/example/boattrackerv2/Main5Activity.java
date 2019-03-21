@@ -35,11 +35,14 @@ public class Main5Activity extends AppCompatActivity implements
 
     private GoogleApiClient mGoogleApiClient;
     private TextView textViewTest;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
+
+        intent = getIntent();
 
         textViewTest = findViewById(R.id.textViewTest);
         findViewById(R.id.sign_in_button).setOnClickListener(this);
@@ -121,6 +124,8 @@ public class Main5Activity extends AppCompatActivity implements
     private void updateUI(boolean signedIn) {
         if (signedIn) {
             isConnected = true;
+            if (intent.getBooleanExtra("isConnected",false))
+                finish();
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_out_button).setVisibility(View.VISIBLE);
         } else {
